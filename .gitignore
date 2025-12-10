@@ -1,0 +1,45 @@
+# ============================================================================
+# FAVis - .gitignore
+# ============================================================================
+
+# Binário compilado
+favis
+
+# Diretório de build
+build/
+*.o
+
+# Imagens de saída (geradas)
+output/*
+!output/.gitkeep
+
+# Imagens de entrada (usuário adiciona as suas)
+images/*
+!images/.gitkeep
+!images/sample*.jpg
+!images/sample*.png
+
+# Bibliotecas baixadas (setup.sh baixa automaticamente)
+# Descomente se quiser incluir no repo:
+# include/stb_image.h
+# include/stb_image_write.h
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Debug
+core
+*.core
+vgcore.*
+
+# Recursos IPC (caso criados no diretório)
+*.shm
+*.mq
